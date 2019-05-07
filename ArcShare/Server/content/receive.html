@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Arc Share</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/fluent.css">
+	<link rel="stylesheet" href="./css/micon.min.css">
+	<link rel="icon" sizes="192x192" href="img/android-desktop.png">
+	<link rel="apple-touch-icon-precomposed" href="img/ios-desktop.png">
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<!--<script src="http://192.168.0.129:1337/vorlon.js"></script>-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		var selected = [];
+
+		console.log("ArcShare JS has been loaded");
+
+		function BytesNumToString(b) {
+			var si = true;
+			var thresh = si ? 1000 : 1024;
+			if (b < thresh) return b + ' B';
+			var units = si ? ['kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'] : ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB'];
+			var u = -1;
+			do {
+				b /= thresh;
+				++u;
+			} while (b >= thresh);
+			return b.toFixed(1) + ' ' + units[u];
+		}
+
+		function onFilePickerSelected() {
+			var files = document.getElementById("filePicker").files;
+			for (var i = 0; i < files.length; i++) {
+				selected.push(files[i]);
+			}
+			console.log(files.length + " files has been selected");
+			viewUpdate();
+		}
+
+		function viewUpdate() {
+			console.log("called viewUpdate();");
+			var table = document.getElementById("table");
+
+			$(".clickable-row").each(function () {
+				$(this).remove();
+			});
+
+			var progressBar = document.getElementById("progressbar");
+			progressBar.style.width = "0%";
+			progressBar.setAttribute("aria-valuenow", "0");
+			var progressText = document.getElementById("percentageNum");
+			progressText.innerHTML = "0";
+
+			var totalSize = 0;
+
+			if (selected.length === 0) {
+				return;
+			}
+
+			for (var i = 0; i < selected.length; i++) {
+				var file = selected[i];
+				if (file) {
+					totalSize += file.size;
+					var sizeInStr = BytesNumToString(file.size);
+
+					var row = table.insertRow(-1);
+					row.classList.add("clickable-row");
+					row.id = "row" + i;
+					var id = row.insertCell(0);
+					var name = row.insertCell(1);
+					var size = row.insertCell(2);
+
+					id.innerHTML = i;
+					name.innerHTML = file.name;
+					size.innerHTML = sizeInStr;
+
+					console.log("Added :" + file.name);
+				}
+			}
+
+			$(".clickable-row").click(function () {
+				if ($(this).hasClass("bg-secondary"))
+					$(this).removeClass('bg-secondary');
+				else
+					$(this).addClass('bg-secondary');
+			});
+
+			totalbytes = totalSize;
+		}
+
+		function onSelecteAll() {
+			$(".clickable-row").each(function () {
+				if (!$(this).hasClass("bg-secondary")) {
+					$(this).addClass("bg-secondary");
+				}
+			});
+		}
+
+		function onDeselectAll() {
+			$(".clickable-row").each(function () {
+				if ($(this).hasClass("bg-secondary")) {
+					$(this).removeClass("bg-secondary");
+				}
+			});
+		}
+
+		jQuery.fn.reverse = [].reverse;
+		function onRemoveClick() {
+			$(".clickable-row").reverse().each(function () {
+				if ($(this).hasClass("bg-secondary")) {
+					var id = $(this).attr("id").replace("row", "");
+					var num = Number(id);
+					console.log("before: " + selected);
+					selected.splice(num, 1);
+					console.log("after: " + selected);
+					viewUpdate();
+				}
+			});
+		}
+
+		function startUpload() {
+			var form = new FormData();
+			for (i = 0; i < selected.length; i++) {
+				var file = selected[i];
+				form.append("files", file);
+			}
+
+			var redundancyCode = new Int8Array(65536);
+			redundancyCode.fill(204);
+			var blob = new Blob([redundancyCode], { type: "application/wtf" });
+			form.append("redundancy", blob, "4E69DE01-D335-46F3-A43D-B905BB2C81CA.arc");
+
+			var request = new XMLHttpRequest();
+			request.addEventListener("load", uploadCompleted, false);
+			request.addEventListener("error", uploadError, false);
+			request.addEventListener("cancel", uploadCanceled, false);
+
+			request.upload.addEventListener("progress", updateProgressChanged, false);
+			
+			request.open("POST", "/up");
+			request.setRequestHeader('cache-control', 'no-cache, must-revalidate, post-check=0, pre-check=0');
+			request.setRequestHeader("expires", '0');
+
+			request.send(form);
+		}
+
+		function updateProgressChanged(event) {
+			var progressBar = document.getElementById("progressbar");
+			if (event.lengthComputable) {
+				var percent = Math.round(event.loaded * 100 / event.total);
+				progressBar.style.width = percent + "%";
+				progressBar.setAttribute("aria-valuenow", percent);
+				document.getElementById("percentageNum").innerHTML = percent;
+			} else {
+				progressBar.style.width = "100%";
+				progressBar.setAttribute("aria-valuenow", 100);
+				//document.getElementById("percentageNum").innerHTML = 100;
+			}
+		}
+
+		function uploadCompleted(event) {
+
+		}
+
+		function uploadError(event) {
+			alert("We've dropped into an error while sending.");
+		}
+
+		function uploadCanceled(event) {
+			alert("Transfering was canceled");
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+			<div class="container">
+				<a href="#" class="navbar-brand hidden-sm-up">Arc Share</a>
+			</div>
+		</nav>
+	</header>
+	<main role="main" class="container">
+		<div class="row">
+			<table class="table shadow-sm p-3 mb-5 bg-white table-hover" id="table">
+				<thead class="thead-light">
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">[FileList]</th>
+						<th scope="col">[Size]</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+		<div class="row">
+			<div class="col-md-auto">
+				<p style="margin-top: 10px;">[Progress] <span id="percentageNum">25</span>%</p>
+			</div>
+			<div class="col">
+				<div class="progress progress-fluent my-3 ">
+					<div id="progressbar" class="progress-bar " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 1.3rem;">
+			<div class="col">
+				<span class="btn btn-info btn-file">[BrowseFiles]<input id="filePicker" type="file" onchange="javascript: onFilePickerSelected();" multiple="multiple" /></span>
+				<button type="button" class="btn btn-secondary" onclick="onSelecteAll();">[SelectAll]</button>
+				<button type="button" class="btn btn-secondary" onclick="onDeselectAll();">[CancelSelection]</button>
+				<button type="button" class="btn btn-danger" onclick="onRemoveClick();">[RemoveSelected]</button>
+			</div>
+			<button id="sendbtn" type="button" class="btn btn-primary float-lg-left" data-toggle="tooltip" data-placement="bottom"
+					title="[SendAllFilesInTheList]" onclick="startUpload();">
+				<i class="mi mi-Send"></i> [Send]
+			</button>
+		</div>
+	</main>
+
+	<footer class="page-footer font-small pt-4 sticky-footer">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+			<!-- Grid row -->
+			<div class="row">
+				<!-- Grid column -->
+				<div class="col-md-6 mt-md-0 mt-3">
+					<!-- Content -->
+					<h5 class="text-uppercase">Arc Share</h5>
+					<p class="text-muted">
+						[DescriptionShort]
+						<br />Made with &hearts; by Copper
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright text-center py-3">
+			<span>
+				<a href="https://www.microsoft.com/store/apps/9MZ51ZV006J8?ocid=badge" target="_blank">[GetFromMicrosoft]</a>
+			</span>
+			<span>
+				| © 2018 Copyright
+				<a href="https://www.copperion.com"> Copper</a>
+			</span>
+		</div>
+	</footer>
+	<!-- Scripts -->
+	<script type="text/javascript">
+		$(".clickable-row").click(function () {
+			if ($(this).hasClass("bg-secondary"))
+				$(this).removeClass('bg-secondary');
+			else
+				$(this).addClass('bg-secondary');
+		})
+
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+</body>
+</html>

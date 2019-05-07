@@ -1,0 +1,28 @@
+﻿<Page
+	x:Class="ArcShare.Pages.InstrumentPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="using:ArcShare.Pages"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d">
+
+
+	<Grid Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Image
+				x:Name="logo"
+				Width="256"
+				Source="/Assets/ColoredLogo.png" />
+			<TextBlock
+				HorizontalAlignment="Center"
+				Style="{ThemeResource TitleTextBlockStyle}"
+				Text="Arc Share" />
+			<TextBlock
+				x:Uid="SwitchToStart"
+				HorizontalAlignment="Center"
+				Style="{ThemeResource SubtitleTextBlockStyle}"
+				Text="Switch to Send / Receive to start" />
+		</StackPanel>
+	</Grid>
+</Page>

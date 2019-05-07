@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppDisplayName" xml:space="preserve">
+    <value>Arc Share</value>
+  </data>
+  <data name="HomePItem.Header" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="ReceivePItem.Header" xml:space="preserve">
+    <value>接收</value>
+  </data>
+  <data name="Sending.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="SendingInst.Text" xml:space="preserve">
+    <value>1. 在资源管理器中查找文件
+2. 点击 "发送" 按钮
+3. 与任何人分享</value>
+  </data>
+  <data name="SendPItem.Header" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="SettingsPItem.Header" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="AddFileError" xml:space="preserve">
+    <value>在添加文件"{0}"时我们遇到了一个错误
+{1}
+如果你一直收到这个错误消息，请与开发者联系</value>
+  </data>
+  <data name="BackWarningContent" xml:space="preserve">
+    <value>你确定要返回吗？如果返回，正在进行的文件传输可能会被中止。</value>
+  </data>
+  <data name="ButtonAdd.Label" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="ButtonClear.Label" xml:space="preserve">
+    <value>清空选项</value>
+  </data>
+  <data name="ButtonSelectAll.Label" xml:space="preserve">
+    <value>选择全部</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ChangeThemeNotification.Text" xml:space="preserve">
+    <value>这些设置会在下一次启动程序的时候生效</value>
+  </data>
+  <data name="ChooseItems.Text" xml:space="preserve">
+    <value>选择文件</value>
+  </data>
+  <data name="ConfirmRemoveContent" xml:space="preserve">
+    <value>这只会影响你想传输的文件，而并不会本地删除它们</value>
+  </data>
+  <data name="fr" xml:space="preserve">
+    <value>从列表里移除？</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>服务端正在运行...</value>
+  </data>
+  <data name="StartBrowserInst.Text" xml:space="preserve">
+    <value>2. 用设备扫描二维码或者打开浏览器并转到</value>
+  </data>
+  <data name="StartLANInst.Text" xml:space="preserve">
+    <value>1. 在另一台设备上打开Wi-Fi并将其连接到相同的网络或热点</value>
+  </data>
+  <data name="Status.Text" xml:space="preserve">
+    <value>状态：</value>
+  </data>
+  <data name="Theme.Text" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="ThemeDark.Content" xml:space="preserve">
+    <value>暗色</value>
+  </data>
+  <data name="ThemeLight.Content" xml:space="preserve">
+    <value>亮色</value>
+  </data>
+  <data name="ThemeSystem.Content" xml:space="preserve">
+    <value>使用系统主题</value>
+  </data>
+  <data name="UnderConstruction.Text" xml:space="preserve">
+    <value>很抱歉，这个功能正在建设当中</value>
+  </data>
+  <data name="Waiting.Text" xml:space="preserve">
+    <value>等待连接</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="About.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="AppVersionT.Text" xml:space="preserve">
+    <value>应用程序版本</value>
+  </data>
+  <data name="ButtonLicenses.Content" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="Language.Text" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="LanguageChinese.Text" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="LanguageEnglish.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="LicencesText" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="ButtonContactDev.Content" xml:space="preserve">
+    <value>联系开发者</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Arc Share 能够让用户在局域网之间传递文件，而不需任何流量连接，照片、视频、音乐以及任何你能想到的文件都可以。你只需要Arc Share和浏览器，并不需要在接收端设备额外安装多余的客户端。这个App目前还在测试阶段，一些功能并没有完成，所以使用过程中可能会遇到问题，请在设置栏联系开发者。</value>
+  </data>
+  <data name="ClickToDownload" xml:space="preserve">
+    <value>点击文件名来下载</value>
+  </data>
+  <data name="DownloadAsZip" xml:space="preserve">
+    <value>全部打包成ZIP下载</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="SelectAtLeastOne" xml:space="preserve">
+    <value>请至少选择一个文件来继续发送</value>
+  </data>
+  <data name="SwitchToStart.Text" xml:space="preserve">
+    <value>选择 发送/接收 来开始使用</value>
+  </data>
+  <data name="DescriptionShort" xml:space="preserve">
+    <value>一个跨平台、离线的文件共享应用。</value>
+  </data>
+  <data name="GetFromMicrosoft" xml:space="preserve">
+    <value>从微软商店获取Arc Share</value>
+  </data>
+  <data name="FeedbackButton.Content" xml:space="preserve">
+    <value>反馈</value>
+  </data>
+  <data name="FilesHistory.Text" xml:space="preserve">
+    <value>文件历史</value>
+  </data>
+  <data name="ButtonRemove.Label" xml:space="preserve">
+    <value>删除选中</value>
+  </data>
+  <data name="ButtonSend.Label" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="BrowseFiles" xml:space="preserve">
+    <value>浏览文件</value>
+  </data>
+  <data name="CancelSelection" xml:space="preserve">
+    <value>取消选择</value>
+  </data>
+  <data name="FileList" xml:space="preserve">
+    <value>文件列表</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>进度</value>
+  </data>
+  <data name="RemoveSelected" xml:space="preserve">
+    <value>删除选中</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>选择全部</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>发送</value>
+  </data>
+</root>

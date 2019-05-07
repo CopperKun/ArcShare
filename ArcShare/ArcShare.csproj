@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{51BA6262-0AB9-4453-ADBF-CD0EEDDE588C}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArcShare</RootNamespace>
+    <AssemblyName>ArcShare</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17134.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>ArcShare_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>AA6031686A998E6838B083753E0F7D230CD2F060</PackageCertificateThumbprint>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <AppInstallerUpdateFrequency>1</AppInstallerUpdateFrequency>
+    <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
+    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Label="MultilingualAppToolkit">
+    <MultilingualAppToolkitVersion>4.0</MultilingualAppToolkitVersion>
+    <MultilingualFallbackLanguage>en-US</MultilingualFallbackLanguage>
+    <TranslationReport Condition="'$(Configuration)' == 'Release'">true</TranslationReport>
+    <SuppressPseudoWarning Condition="'$(Configuration)' == 'Debug'">true</SuppressPseudoWarning>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="Pages\LicensesDialog.xaml.cs">
+      <DependentUpon>LicensesDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RunningPage.xaml.cs">
+      <DependentUpon>RunningPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SendPage.xaml.cs">
+      <DependentUpon>SendPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Server\ArcExtra.cs" />
+    <Compile Include="Server\HttpRequest.cs" />
+    <Compile Include="Server\HttpServer.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InstrumentPage.xaml.cs">
+      <DependentUpon>InstrumentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ReceivePage.xaml.cs">
+      <DependentUpon>ReceivePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="Assets\desktop_empty.png" />
+    <Content Include="Assets\ColoredLogo.png" />
+    <Content Include="Assets\LargeTile.scale-100.png" />
+    <Content Include="Assets\LargeTile.scale-125.png" />
+    <Content Include="Assets\LargeTile.scale-150.png" />
+    <Content Include="Assets\LargeTile.scale-200.png" />
+    <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\qrcode_placeholder.png" />
+    <Content Include="LICENSES.txt" />
+    <Content Include="Server\content\404.html" />
+    <Content Include="Server\content\css\bootstrap.min.css" />
+    <Content Include="Server\content\css\fluent.css" />
+    <Content Include="Server\content\css\fluent.min.css" />
+    <Content Include="Server\content\css\micon.min.css" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-300.svg" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-300italic.svg" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-600.svg" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-600italic.svg" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-700.svg" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-700italic.svg" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-800.svg" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-800italic.svg" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-italic.svg" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-regular.svg" />
+    <Content Include="Server\content\img\android-desktop.png" />
+    <Content Include="Server\content\img\favicon.png" />
+    <Content Include="Server\content\img\ios-desktop.png" />
+    <Content Include="Server\content\img\lightbox\default-skin.png" />
+    <Content Include="Server\content\img\lightbox\default-skin.svg" />
+    <Content Include="Server\content\img\lightbox\preloader.gif" />
+    <Content Include="Server\content\img\overlays\01.png" />
+    <Content Include="Server\content\img\overlays\02.png" />
+    <Content Include="Server\content\img\overlays\03.png" />
+    <Content Include="Server\content\img\overlays\04.png" />
+    <Content Include="Server\content\img\overlays\05.png" />
+    <Content Include="Server\content\img\overlays\06.png" />
+    <Content Include="Server\content\img\overlays\07.png" />
+    <Content Include="Server\content\img\overlays\08.png" />
+    <Content Include="Server\content\img\overlays\09.png" />
+    <Content Include="Server\content\img\svg\arrow_left.svg" />
+    <Content Include="Server\content\img\svg\arrow_right.svg" />
+    <Content Include="Server\content\js\arcshare.js" />
+    <Content Include="Server\content\send.html" />
+    <Content Include="Server\content\js\bootstrap.js" />
+    <Content Include="Server\content\js\bootstrap.min.js" />
+    <Content Include="Server\content\js\jquery-3.3.1.min.js" />
+    <Content Include="Server\content\js\popper.min.js" />
+    <Content Include="Server\content\receive.html" />
+    <None Include="ArcShare_StoreKey.pfx" />
+    <None Include="ArcShare_TemporaryKey.pfx" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-125.png" />
+    <Content Include="Assets\SmallTile.scale-150.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-125.png" />
+    <Content Include="Assets\Square150x150Logo.scale-150.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-125.png" />
+    <Content Include="Assets\Square44x44Logo.scale-150.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-125.png" />
+    <Content Include="Assets\StoreLogo.scale-150.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-125.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-150.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="Server\content\font\icon\micon.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-300.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-300.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-300.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-300.woff2" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-300italic.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-300italic.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-300italic.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-300italic.woff2" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-600.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-600.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-600.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-600.woff2" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-600italic.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-600italic.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-600italic.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-600italic.woff2" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-700.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-700.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-700.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-700.woff2" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-700italic.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-700italic.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-700italic.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-700italic.woff2" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-800.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-800.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-800.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-800.woff2" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-800italic.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-800italic.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-800italic.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-800italic.woff2" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-italic.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-italic.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-italic.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-italic.woff2" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-regular.eot" />
+    <Content Include="Server\content\font\OpenSans\open-sans-v15-latin-regular.ttf" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-regular.woff" />
+    <None Include="Server\content\font\OpenSans\open-sans-v15-latin-regular.woff2" />
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+    <PRIResource Include="Strings\zh-CN\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\InstrumentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LicensesDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ReceivePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunningPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SendPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client">
+      <Version>5.2.6</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="QRCoder">
+      <Version>1.3.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.Services.Store.Engagement, Version=10.0">
+      <Name>Microsoft Engagement Framework</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
+      <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="MultilingualResources\ArcShare.zh-CN.xlf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HttpMultipartParser\HttpMultipartParser.csproj">
+      <Project>{4691988a-ce66-40cb-afb4-2757255e03e0}</Project>
+      <Name>HttpMultipartParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.PriResources.targets" Label="MultilingualAppToolkit" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\v$(MultilingualAppToolkitVersion)\Microsoft.Multilingual.PriResources.targets')" />
+  <Target Name="MATPrerequisite" BeforeTargets="PrepareForBuild" Condition="!Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.PriResources.targets')" Label="MultilingualAppToolkit">
+    <Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

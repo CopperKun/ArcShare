@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="zh-CN" original="ArcShare/STRINGS/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6900.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="ARCSHARE/STRINGS/EN-US/RESOURCES.RESW">
+        <trans-unit id="AppDisplayName" translate="yes" xml:space="preserve">
+          <source>Arc Share</source>
+          <target state="translated">Arc Share</target>
+        </trans-unit>
+        <trans-unit id="HomePItem.Header" translate="yes" xml:space="preserve">
+          <source>Home</source>
+          <target state="translated">主页</target>
+        </trans-unit>
+        <trans-unit id="ReceivePItem.Header" translate="yes" xml:space="preserve">
+          <source>Receive</source>
+          <target state="translated">接收</target>
+        </trans-unit>
+        <trans-unit id="Sending.Text" translate="yes" xml:space="preserve">
+          <source>Sending</source>
+          <target state="translated">发送</target>
+        </trans-unit>
+        <trans-unit id="SendingInst.Text" translate="yes" xml:space="preserve">
+          <source>1. Find file in Explorer
+2. Tap 'Send' Button
+3. Share it to anyone</source>
+          <target state="translated">1. 在资源管理器中查找文件
+2. 点击 "发送" 按钮
+3. 与任何人分享</target>
+        </trans-unit>
+        <trans-unit id="SendPItem.Header" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="translated">发送</target>
+        </trans-unit>
+        <trans-unit id="SettingsPItem.Header" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="translated">设置</target>
+        </trans-unit>
+        <trans-unit id="AddFileError" translate="yes" xml:space="preserve">
+          <source>We've dropped into an error while adding the file "{0}" and the message reads 
+{1}
+If you continue catching this error, please contact the developer.</source>
+          <target state="translated">在添加文件"{0}"时我们遇到了一个错误
+{1}
+如果你一直收到这个错误消息，请与开发者联系</target>
+        </trans-unit>
+        <trans-unit id="AppDescription" translate="yes" xml:space="preserve">
+          <source>Hello World [to be edited]</source>
+          <target state="new">Hello World [to be edited]</target>
+        </trans-unit>
+        <trans-unit id="BackWarningContent" translate="yes" xml:space="preserve">
+          <source>Are you sure you want to go back? If you go back, the server will stop and the TRANSFERENCE MAY BE DISCONTINUED as well.</source>
+          <target state="translated">你确定要返回吗？如果返回，正在进行的文件传输可能会被中止。</target>
+        </trans-unit>
+        <trans-unit id="ButtonAdd.Label" translate="yes" xml:space="preserve">
+          <source>Add</source>
+          <target state="translated">添加</target>
+        </trans-unit>
+        <trans-unit id="ButtonClear.Label" translate="yes" xml:space="preserve">
+          <source>Clear Selection</source>
+          <target state="translated">清空选项</target>
+        </trans-unit>
+        <trans-unit id="ButtonSelectAll.Label" translate="yes" xml:space="preserve">
+          <source>Select All</source>
+          <target state="translated">选择全部</target>
+        </trans-unit>
+        <trans-unit id="Cancel" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="translated">取消</target>
+        </trans-unit>
+        <trans-unit id="ChangeThemeNotification.Text" translate="yes" xml:space="preserve">
+          <source>You'll see your changes the next time you start this app.</source>
+          <target state="translated">这些设置会在下一次启动程序的时候生效</target>
+        </trans-unit>
+        <trans-unit id="ChooseItems.Text" translate="yes" xml:space="preserve">
+          <source>Choose Items</source>
+          <target state="translated">选择文件</target>
+        </trans-unit>
+        <trans-unit id="ConfirmRemoveContent" translate="yes" xml:space="preserve">
+          <source>This will only affect the file(s) you want to transfer, but will not delete the local file.</source>
+          <target state="translated">这只会影响你想传输的文件，而并不会本地删除它们</target>
+        </trans-unit>
+        <trans-unit id="fr" translate="yes" xml:space="preserve">
+          <source>Remove file from list?</source>
+          <target state="translated">从列表里移除？</target>
+        </trans-unit>
+        <trans-unit id="Error" translate="yes" xml:space="preserve">
+          <source>ERROR</source>
+          <target state="translated">错误</target>
+        </trans-unit>
+        <trans-unit id="No" translate="yes" xml:space="preserve">
+          <source>No</source>
+          <target state="translated">否</target>
+        </trans-unit>
+        <trans-unit id="Remove" translate="yes" xml:space="preserve">
+          <source>Remove</source>
+          <target state="translated">删除</target>
+        </trans-unit>
+        <trans-unit id="Running" translate="yes" xml:space="preserve">
+          <source>Server is currently running...</source>
+          <target state="translated">服务端正在运行...</target>
+        </trans-unit>
+        <trans-unit id="StartBrowserInst.Text" translate="yes" xml:space="preserve">
+          <source>2. Scan the QR Code or just start a web browser and navigate to</source>
+          <target state="translated">2. 用设备扫描二维码或者打开浏览器并转到</target>
+        </trans-unit>
+        <trans-unit id="StartLANInst.Text" translate="yes" xml:space="preserve">
+          <source>1. Start the Wi-Fi on the other device and connect to the same network or hotspot.</source>
+          <target state="translated">1. 在另一台设备上打开Wi-Fi并将其连接到相同的网络或热点</target>
+        </trans-unit>
+        <trans-unit id="Status.Text" translate="yes" xml:space="preserve">
+          <source>Status :</source>
+          <target state="translated">状态：</target>
+        </trans-unit>
+        <trans-unit id="Theme.Text" translate="yes" xml:space="preserve">
+          <source>Theme</source>
+          <target state="translated">主题</target>
+        </trans-unit>
+        <trans-unit id="ThemeDark.Content" translate="yes" xml:space="preserve">
+          <source>Dark</source>
+          <target state="translated">暗色</target>
+        </trans-unit>
+        <trans-unit id="ThemeLight.Content" translate="yes" xml:space="preserve">
+          <source>Light</source>
+          <target state="translated">亮色</target>
+        </trans-unit>
+        <trans-unit id="ThemeSystem.Content" translate="yes" xml:space="preserve">
+          <source>Use system theme</source>
+          <target state="translated">使用系统主题</target>
+        </trans-unit>
+        <trans-unit id="UnderConstruction.Text" translate="yes" xml:space="preserve">
+          <source>We are sorry but this function is currently under construction</source>
+          <target state="translated">很抱歉，这个功能正在建设当中</target>
+        </trans-unit>
+        <trans-unit id="Waiting.Text" translate="yes" xml:space="preserve">
+          <source>Waiting for connection</source>
+          <target state="translated">等待连接</target>
+        </trans-unit>
+        <trans-unit id="Warning" translate="yes" xml:space="preserve">
+          <source>WARNING</source>
+          <target state="translated">警告</target>
+        </trans-unit>
+        <trans-unit id="Yes" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+          <target state="translated">是</target>
+        </trans-unit>
+        <trans-unit id="About.Text" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="translated">关于</target>
+        </trans-unit>
+        <trans-unit id="AppVersionT.Text" translate="yes" xml:space="preserve">
+          <source>App version</source>
+          <target state="translated">应用程序版本</target>
+        </trans-unit>
+        <trans-unit id="ButtonLicenses.Content" translate="yes" xml:space="preserve">
+          <source>Licenses</source>
+          <target state="translated">协议</target>
+        </trans-unit>
+        <trans-unit id="Language.Text" translate="yes" xml:space="preserve">
+          <source>Language</source>
+          <target state="translated">语言</target>
+        </trans-unit>
+        <trans-unit id="LanguageChinese.Text" translate="yes" xml:space="preserve">
+          <source>简体中文</source>
+          <target state="translated">简体中文</target>
+        </trans-unit>
+        <trans-unit id="LanguageEnglish.Text" translate="yes" xml:space="preserve">
+          <source>English</source>
+          <target state="translated">English</target>
+        </trans-unit>
+        <trans-unit id="LicencesText" translate="yes" xml:space="preserve">
+          <source>Licenses</source>
+          <target state="translated">协议</target>
+        </trans-unit>
+        <trans-unit id="ButtonContactDev.Content" translate="yes" xml:space="preserve">
+          <source>Contact Developer</source>
+          <target state="translated">联系开发者</target>
+        </trans-unit>
+        <trans-unit id="Description" translate="yes" xml:space="preserve">
+          <source>Arc Share allows users to share files over local aera network, including photos, videos, music and any file that you want. All you need is Arc Share and web browser, and it's not required to install another client on your receiving devices. This app is beta version and it's functions are not fully completed. If you drop into any error, please contact the developer in the Settings tab or use Windows Feedback to contact me.</source>
+          <target state="translated">Arc Share 能够让用户在局域网之间传递文件，而不需任何流量连接，照片、视频、音乐以及任何你能想到的文件都可以。你只需要Arc Share和浏览器，并不需要在接收端设备额外安装多余的客户端。这个App目前还在测试阶段，一些功能并没有完成，所以使用过程中可能会遇到问题，请在设置栏联系开发者。</target>
+        </trans-unit>
+        <trans-unit id="ClickToDownload" translate="yes" xml:space="preserve">
+          <source>Click file name to download</source>
+          <target state="translated">点击文件名来下载</target>
+        </trans-unit>
+        <trans-unit id="DownloadAsZip" translate="yes" xml:space="preserve">
+          <source>Download As Zip</source>
+          <target state="translated">全部打包成ZIP下载</target>
+        </trans-unit>
+        <trans-unit id="Files" translate="yes" xml:space="preserve">
+          <source>Files</source>
+          <target state="translated">文件</target>
+        </trans-unit>
+        <trans-unit id="Size" translate="yes" xml:space="preserve">
+          <source>Size</source>
+          <target state="translated">大小</target>
+        </trans-unit>
+        <trans-unit id="SelectAtLeastOne" translate="yes" xml:space="preserve">
+          <source>Please select at least 1 file to continue.</source>
+          <target state="translated">请至少选择一个文件来继续发送</target>
+        </trans-unit>
+        <trans-unit id="SwitchToStart.Text" translate="yes" xml:space="preserve">
+          <source>Switch to Send / Receive to start</source>
+          <target state="translated">选择 发送/接收 来开始使用</target>
+        </trans-unit>
+        <trans-unit id="DescriptionShort" translate="yes" xml:space="preserve">
+          <source>Offering you a quick, offline file sharing between any platforms.</source>
+          <target state="translated">一个跨平台、离线的文件共享应用。</target>
+        </trans-unit>
+        <trans-unit id="GetFromMicrosoft" translate="yes" xml:space="preserve">
+          <source>Get Arc Share from Microsoft Store</source>
+          <target state="translated">从微软商店获取Arc Share</target>
+        </trans-unit>
+        <trans-unit id="FeedbackButton.Content" translate="yes" xml:space="preserve">
+          <source>Feedback</source>
+          <target state="translated">反馈</target>
+        </trans-unit>
+        <trans-unit id="FilesHistory.Text" translate="yes" xml:space="preserve">
+          <source>Files History</source>
+          <target state="translated">文件历史</target>
+        </trans-unit>
+        <trans-unit id="ButtonRemove.Label" translate="yes" xml:space="preserve">
+          <source>Remove Selected</source>
+          <target state="translated">删除选中</target>
+        </trans-unit>
+        <trans-unit id="ButtonSend.Label" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="translated">发送</target>
+        </trans-unit>
+        <trans-unit id="BrowseFiles" translate="yes" xml:space="preserve">
+          <source>Browse Files</source>
+          <target state="translated">浏览文件</target>
+        </trans-unit>
+        <trans-unit id="CancelSelection" translate="yes" xml:space="preserve">
+          <source>Clear Selection</source>
+          <target state="translated">取消选择</target>
+        </trans-unit>
+        <trans-unit id="FileList" translate="yes" xml:space="preserve">
+          <source>File List</source>
+          <target state="translated">文件列表</target>
+        </trans-unit>
+        <trans-unit id="Progress" translate="yes" xml:space="preserve">
+          <source>Progress</source>
+          <target state="translated">进度</target>
+        </trans-unit>
+        <trans-unit id="RemoveSelected" translate="yes" xml:space="preserve">
+          <source>Remove Selected</source>
+          <target state="translated">删除选中</target>
+        </trans-unit>
+        <trans-unit id="SelectAll" translate="yes" xml:space="preserve">
+          <source>Select All</source>
+          <target state="translated">选择全部</target>
+        </trans-unit>
+        <trans-unit id="Send" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="translated">发送</target>
+        </trans-unit>
+        <trans-unit id="PortRangeWarning" translate="yes" xml:space="preserve">
+          <source>Port number must range from 7000 to 65535 in terms of security issue.</source>
+          <target state="new">Port number must range from 7000 to 65535 in terms of security issue.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

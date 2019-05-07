@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppDisplayName" xml:space="preserve">
+    <value>Arc Share</value>
+  </data>
+  <data name="HomePItem.Header" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="ReceivePItem.Header" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="Sending.Text" xml:space="preserve">
+    <value>Sending</value>
+  </data>
+  <data name="SendingInst.Text" xml:space="preserve">
+    <value>1. Find file in Explorer
+2. Tap 'Send' Button
+3. Share it to anyone</value>
+  </data>
+  <data name="SendPItem.Header" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SettingsPItem.Header" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="AddFileError" xml:space="preserve">
+    <value>We've dropped into an error while adding the file "{0}" and the message reads 
+{1}
+If you continue catching this error, please contact the developer.</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>Hello World [to be edited]</value>
+  </data>
+  <data name="BackWarningContent" xml:space="preserve">
+    <value>Are you sure you want to go back? If you go back, the server will stop and the TRANSFERENCE MAY BE DISCONTINUED as well.</value>
+  </data>
+  <data name="ButtonAdd.Label" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ButtonClear.Label" xml:space="preserve">
+    <value>Clear Selection</value>
+  </data>
+  <data name="ButtonRemove.Label" xml:space="preserve">
+    <value>Remove Selected</value>
+  </data>
+  <data name="ButtonSelectAll.Label" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="ButtonSend.Label" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangeThemeNotification.Text" xml:space="preserve">
+    <value>You'll see your changes the next time you start this app.</value>
+  </data>
+  <data name="ChooseItems.Text" xml:space="preserve">
+    <value>Choose Items</value>
+  </data>
+  <data name="ConfirmRemoveContent" xml:space="preserve">
+    <value>This will only affect the file(s) you want to transfer, but will not delete the local file.</value>
+  </data>
+  <data name="fr" xml:space="preserve">
+    <value>Remove file from list?</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>ERROR</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Server is currently running...</value>
+  </data>
+  <data name="StartBrowserInst.Text" xml:space="preserve">
+    <value>2. Scan the QR Code or just start a web browser and navigate to</value>
+  </data>
+  <data name="StartLANInst.Text" xml:space="preserve">
+    <value>1. Start the Wi-Fi on the other device and connect to the same network or hotspot.</value>
+  </data>
+  <data name="Status.Text" xml:space="preserve">
+    <value>Status :</value>
+  </data>
+  <data name="Theme.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="ThemeDark.Content" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="ThemeLight.Content" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="ThemeSystem.Content" xml:space="preserve">
+    <value>Use system theme</value>
+  </data>
+  <data name="UnderConstruction.Text" xml:space="preserve">
+    <value>We are sorry but this function is currently under construction</value>
+  </data>
+  <data name="Waiting.Text" xml:space="preserve">
+    <value>Waiting for connection</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>WARNING</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="About.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="AppVersionT.Text" xml:space="preserve">
+    <value>App version</value>
+  </data>
+  <data name="ButtonLicenses.Content" xml:space="preserve">
+    <value>Licenses</value>
+  </data>
+  <data name="Language.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LanguageChinese.Text" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="LanguageEnglish.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="LicencesText" xml:space="preserve">
+    <value>Licenses</value>
+  </data>
+  <data name="ButtonContactDev.Content" xml:space="preserve">
+    <value>Contact Developer</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Arc Share allows users to share files over local aera network, including photos, videos, music and any file that you want. All you need is Arc Share and web browser, and it's not required to install another client on your receiving devices. This app is beta version and it's functions are not fully completed. If you drop into any error, please contact the developer in the Settings tab or use Windows Feedback to contact me.</value>
+  </data>
+  <data name="ClickToDownload" xml:space="preserve">
+    <value>Click file name to download</value>
+  </data>
+  <data name="DownloadAsZip" xml:space="preserve">
+    <value>Download As Zip</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SelectAtLeastOne" xml:space="preserve">
+    <value>Please select at least 1 file to continue.</value>
+  </data>
+  <data name="SwitchToStart.Text" xml:space="preserve">
+    <value>Switch to Send / Receive to start</value>
+  </data>
+  <data name="DescriptionShort" xml:space="preserve">
+    <value>Offering you a quick, offline file sharing between any platforms.</value>
+  </data>
+  <data name="GetFromMicrosoft" xml:space="preserve">
+    <value>Get Arc Share from Microsoft Store</value>
+  </data>
+  <data name="FeedbackButton.Content" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="FilesHistory.Text" xml:space="preserve">
+    <value>Files History</value>
+  </data>
+  <data name="BrowseFiles" xml:space="preserve">
+    <value>Browse Files</value>
+  </data>
+  <data name="CancelSelection" xml:space="preserve">
+    <value>Clear Selection</value>
+  </data>
+  <data name="FileList" xml:space="preserve">
+    <value>File List</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="RemoveSelected" xml:space="preserve">
+    <value>Remove Selected</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="PortRangeWarning" xml:space="preserve">
+    <value>Port number must range from 7000 to 65535 in terms of security issue.</value>
+  </data>
+</root>

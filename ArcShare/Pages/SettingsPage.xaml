@@ -1,0 +1,140 @@
+﻿<Page
+	x:Class="ArcShare.Pages.SettingsPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="using:ArcShare.Pages"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:model="using:Windows.ApplicationModel"
+	xmlns:root="using:ArcShare"
+	Loaded="Page_Loaded"
+	mc:Ignorable="d">
+
+	<Grid
+		Background="{ThemeResource SystemControlAcrylicWindowBrush}"
+		ScrollViewer.VerticalScrollBarVisibility="Auto"
+		ScrollViewer.VerticalScrollMode="Auto">
+		<StackPanel>
+			<TextBlock
+				x:Uid="Theme"
+				Style="{ThemeResource SubtitleTextBlockStyle}"
+				Text="Theme" />
+			<RadioButton
+				x:Name="RadioButtonLight"
+				x:Uid="ThemeLight"
+				Checked="ModeRadioButton_Checked"
+				Content="Light"
+				GroupName="ModeRB"
+				Tag="0" />
+			<RadioButton
+				x:Name="RadioButtonDark"
+				x:Uid="ThemeDark"
+				Checked="ModeRadioButton_Checked"
+				Content="Dark"
+				GroupName="ModeRB"
+				Tag="1" />
+			<RadioButton
+				x:Name="RadioButtonSystem"
+				x:Uid="ThemeSystem"
+				Checked="ModeRadioButton_Checked"
+				Content="Use system theme"
+				GroupName="ModeRB"
+				Tag="2" />
+
+			<TextBlock
+				x:Uid="Language"
+				Margin="0,10,0,0"
+				Style="{ThemeResource SubtitleTextBlockStyle}"
+				Text="Language" />
+			<ComboBox
+				x:Name="LangComboBox"
+				Width="150"
+				Margin="0,5,0,0"
+				SelectionChanged="LangComboBox_SelectionChanged">
+				<TextBlock x:Uid="LanguageChinese" Tag="zh-CN" />
+				<TextBlock x:Uid="LanguageEnglish" Tag="en-US" />
+			</ComboBox>
+			<TextBlock
+				x:Name="ChangeNotificationText"
+				x:Uid="ChangeThemeNotification"
+				Margin="0,8,0,0"
+				Foreground="DarkGray"
+				Text="You'll see your changes the next time you start this app for the options above." />
+
+			<TextBlock
+				Margin="0,10,0,0"
+				Style="{ThemeResource SubtitleTextBlockStyle}"
+				Text="Port"
+				ToolTipService.ToolTip="This may be changed automatically before running server if the port is in use by other applications" />
+			<TextBox
+				x:Name="portTextBox"
+				Width="150"
+				Margin="0,5,0,0"
+				HorizontalAlignment="Left"
+				KeyDown="portTextBox_KeyDown"
+				PlaceholderText="Network Port"
+				TextChanged="portTextBox_TextChanged" />
+
+			<TextBlock
+				Margin="0,10,0,0"
+				Style="{ThemeResource SubtitleTextBlockStyle}"
+				Text="Receiving directory" />
+			<StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+				<TextBox
+					x:Name="receivingDirectoryBox"
+					Width="250"
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					IsReadOnly="True"
+					Text="/path/to/receiving/folder" />
+				<Button
+					x:Name="browseDirectory"
+					Margin="5,0,0,0"
+					VerticalAlignment="Center"
+					Click="browseDirectory_Click"
+					Content="Browse" />
+				<Button
+					x:Name="openFolder"
+					Margin="5,0,0,0"
+					VerticalAlignment="Center"
+					Click="openFolder_Click"
+					Content="Open" />
+			</StackPanel>
+			<TextBlock
+				x:Uid="About"
+				Margin="0,45,0,0"
+				Style="{ThemeResource SubtitleTextBlockStyle}"
+				Text="About" />
+			<StackPanel Orientation="Horizontal">
+				<TextBlock
+					x:Uid="AppVersionT"
+					Margin="0,5,0,0"
+					Foreground="DarkGray"
+					Text="1.0.0.0" />
+				<TextBlock
+					Margin="3,5,0,0"
+					Foreground="DarkGray"
+					Text="{x:Bind GetAppVersion()}" />
+			</StackPanel>
+			<TextBlock Foreground="DarkGray" Text="© 2018 Copper" />
+
+			<HyperlinkButton
+				x:Uid="ButtonLicenses"
+				Margin="0,25,0,0"
+				Click="licensesButton_Click"
+				Content="Licenses" />
+			<HyperlinkButton
+				x:Name="feedbackButton"
+				x:Uid="FeedbackButton"
+				Margin="0,5,0,0"
+				Click="feedbackButton_Click"
+				Content="Feedback"
+				Visibility="Collapsed" />
+			<HyperlinkButton
+				x:Uid="ButtonContactDev"
+				Margin="0,5,0,0"
+				Click="contactButton_Click"
+				Content="Contact Developer" />
+		</StackPanel>
+	</Grid>
+</Page>
